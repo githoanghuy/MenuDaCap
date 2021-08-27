@@ -1,0 +1,39 @@
+* {
+    font-size: 30px;
+}
+
+#ulMenu, ul.ulMenuCon {
+    list-style: none;
+    padding-left: 0px;
+}   
+
+li.liMenu {
+    float: left;
+    position: relative;
+}
+
+#ulMenu a {
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    color: aquamarine;
+    padding: 13px 16px;
+}
+
+li.liMenu:hover a {
+    background-color: brown;
+}
+
+ul.ulMenuCon {
+     display: none;
+ }
+
+ li.liMenu:hover>ul, li.liMenuCon:hover>ul {
+     display: block;
+     position: absolute;
+ }
+
+li.liMenuCon:hover>ul{
+    top: 0px;
+    left: 100%;
+}
